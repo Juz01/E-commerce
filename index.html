@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./asset/style/styles.css">
+    <script src="./asset/js/main.js" type="module" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="container">
+            <div class="mainIcon">
+                <a href="#home" class="navbar_logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav_icon">
+                        <title>Academlo Logo</title>
+                        <g>
+                            <g>
+                                <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                    STORE
+                </a>
+            </div>
+            <div class="container__menu">
+                <a class="menu" href="#home">Home</a> 
+                <a class="menu" href="#products">Products</a> 
+            </div>
+            <i class='bx bx-cart' id="iconCart">
+                <span id="amountItems"></span>
+            </i>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="presentantion__container" id="home">
+            <div class="presentation__head">
+                <div></div>
+                <div class="presentation__head-img">
+                    <img src="https://academlostorev1.netlify.app/images/sweater2.png" alt="presentantion">
+                </div>
+            </div>
+    
+            <div class="presentation__body">
+                <h2 class="body-title">
+                    New Sweatshirt COLLECTIONS 2022
+                </h2>
+                <p class="body-paragraph">
+                    Latest arrival of the new Hanes Midweight Crewneck sweatshirt 
+                    imported from the 2022 series, with a modern design.
+                </p>
+                <p class="body-price">
+                    $14.00
+                </p>
+                <a href="#products" class="body-btn">Show more</a>
+            </div>
+        </div>
+    
+        <section class="buttons">
+            <button class="showAllProducts">
+                <p>Show All</p>
+                <p>Show all products</p>
+            </button>
+            <button class="shirt">
+                <p>Shirt</p>
+                <p>Products</p>
+            </button>
+            <button class="hoddie">
+                <p>Hoddies</p>
+                <p>Products</p>
+            </button>
+            <button class="sweater">
+                <p>Sweaters</p>
+                <p>Products</p>
+            </button>
+        </section>
+        
+        <div class="container">
+            <section class="products" id="products"></section>
+        </div>
+    
+        <div class="cart">
+            <div class="cart__products"></div>
+            <div class="cart__total">
+                <div class="cart__tota--info">
+                </div>
+                <button id="btn__buy">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <section class="content_footer container">
+            <div class="footer_info">
+                <h3 class="footer_info-title">Our information</h3>
+                <ul>
+                    <li><a href="#">Barranquilla - Colombia</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_info">
+                <h3 class="footer_info-title">About Us</h3>
+                <ul>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Copy Right</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_info">
+                <h3 class="footer_info-title">Product</h3>
+                <ul>
+                    <li><a href="#">Hoodies</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Sweatshirts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_info">
+                <h3 class="footer_info-title">Social</h3>
+                <ul class="footer_link-social">
+                    <li>
+                        <a href="https://www.facebook.com/jorgeluis.uz/">
+                            <i class="bx bxl-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/ucetajorge?s=21&t=0uueRYXq2B8sspokJzK2Rg">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/j_uz01/">
+                            <i class="bx bxl-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <p><b>Jorge Luis Uceta Familia, jorgeuz01@hotmail.com y <a href="">repositorio</a> de la persona que lo realizo</b></p>
+    </footer>
+    
+</body>
+</html>
