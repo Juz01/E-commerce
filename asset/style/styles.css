@@ -77,33 +77,37 @@ img {
 .header nav .bx-cart {
     font-size: 2rem;
     cursor: pointer;
-    
 }
+
+/* Academlo Logo contenerdor*/
 
 .mainIcon{
     display: flex;
     flex-direction: row;
-    width: 140px;
+    width: 105px;
     justify-content: center; 
     align-items: center;
     cursor: pointer;
+    font-size: 100;
 }
 
+/* Academlo Logo */
 .nav_icon {
-    width: 50px;
-    fill:  var(--first-color);
+    width: 36px;
+    color: var(--principalColor);
+    fill: var(--principalColor);
 }
 
+/* HOME % PRODUCTS */
 .container__menu{
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     font-size: 1rem;
-    align-items: center;
-    gap: 0.5rem;
+    margin-right: 41rem;
     font-weight: 600;
     color: hsl(0, 0%, 15%);
     cursor: pointer;
-    
 }
 
 
@@ -116,9 +120,11 @@ img {
     padding-right: 10%;
 }
 
+.menu:hover {
+    color: var(--principalColor);
+}
 
-
-
+/* El carrito de compras a la derecha */
 
 #iconCart {
     position: relative;
@@ -182,7 +188,7 @@ img {
 }
 
 .body-price {
-    color: var(--first-color);
+    color: var(--principalColor);
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -200,22 +206,72 @@ img {
 /* FILTER's DESIGN */
 .buttons{
     margin: auto;
+    margin-top: 10rem;
     max-width: 700px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
-    user-select: none;
-    background-color: transparent; 
+    user-select: none; 
 }
 
-.showAllProducts:active {
-    background-color: var(--letters-color);
-    color: white;
+/* botones del filtro  */
+.showAllProducts{
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    font-size: medium;
 }
 
+.shirt{
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    font-size: medium;
+}
+
+.hoddie{
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    font-size: medium;
+}
+
+.sweater{
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    font-size: medium;
+}
+
+/* Sobre el boton de filtro */
 .showAllProducts:hover {
     background-color: var(--letters-color);
     transition: var(--transition-colors) ;
+    color: white;
+}
+
+.shirt:hover {
+    background-color: var(--letters-color);
+    transition: var(--transition-colors);
+    color: white;
+}
+
+.hoddie:hover {
+    background-color: var(--letters-color);
+    transition: var(--transition-colors);
+    color: white;
+}
+
+.sweater:hover {
+    background-color: var(--letters-color);
+    transition: var(--transition-colors);
+    color: white;
+}
+
+/* Click en los botones del filtro */
+.showAllProducts:active {
+    background-color: var(--letters-color);
+    color: white;
 }
 
 .shirt:active {
@@ -224,65 +280,15 @@ img {
 
 }
 
-.shirt:hover {
-    background-color: var(--letters-color);
-    transition: var(--transition-colors);
-}
-
 .hoddie:active {
     background-color: var(--letters-color);
     color: white;
-}
-
-.hoddie:hover {
-    background-color: var(--letters-color);
-    transition: var(--transition-colors);
 }
 
 .sweater:active {
     background-color: var(--letters-color);
     color: white;
 }
-
-.sweater:hover {
-    background-color: var(--letters-color);
-    transition: var(--transition-colors);
-}
-
-.buttons:nth-child(1) {
-    text-align: center;
-    cursor: pointer;
-    padding: 0.5rem;
-    transition: var(--transition-colors);
-    box-sizing: var(--general-box-shadow);
-}
-
-.buttons:nth-child(2) {
-    text-align: center;
-    cursor: pointer;
-    padding: 0.5rem;
-    transition: var(--transition-colors);
-    box-sizing: var(--general-box-shadow);
-}
-
-.buttons:nth-child(3) {
-    text-align: center;
-    cursor: pointer;
-    padding: 0.5rem;
-    transition: var(--transition-colors);
-    box-sizing: var(--general-box-shadow);
-}
-
-.buttons:nth-child(4) {
-    text-align: center;
-    cursor: pointer;
-    padding: 0.5rem;
-    transition: var(--transition-colors);
-    box-sizing: var(--general-box-shadow);
-}
-
-
-
 
 
 
@@ -346,7 +352,7 @@ img {
 
 /* Cart's design */
 .cart {
-    width: 50vw;
+    width: 23vw;
     height: calc(100vh - var(--h-header));
     position: fixed;
     top: var(--h-header);
